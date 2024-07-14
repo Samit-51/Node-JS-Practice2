@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #17100B;
+    color: white;
+    min-width: 500px;
+}
+.profile{
+    margin-top: 60px;
+    position: relative;
+    width: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: #252525;
+}
+.profile > .amt{
+    margin: 8px 15px;
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    color: #b2f342;
+    font-family: 'Karla';
+    text-align: center;
+}
+.pp{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 100vw;
+}
+h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.add-amt{
+    font-family: 'Karla';
+    margin-top: 20px;
+    width: 100%;
+}
+.pre-amt{
+    margin: 20px;
+    display: flex;
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 10px 2px;
+}
+.pre-amt .amt{
+    height: 30px;
+    width: 70px;
+    background-color: #b8f353;
+    color: black;
+    font-family: 'Karla';
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    padding: 2px;
+    border: none;
+}
+.input-container{
+    width: fit-content;
+    position: relative;
+    height: fit-content;
+    display: inline-block;
+    margin: 0 20px;
+}
+input{
+    height: 35px;
+    width: 200px;
+    border: none;
+    outline:  none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.clear{
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+button{
+    transition: all .2s;
+}
+button:active{
+    scale: 0.8;
+}
+
+.add{
+    height: 35px;
+    width: 50px;
+    border: none;
+    background: #b2f342;
+    border-radius: 30px;
+}
+
+.flayer{
+    height: 100px;
+    width: max-content;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    color: #b2f342;
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.animation{
+    animation: ani-in 1.5s  forwards;
+}
+
+@keyframes ani-in {
+    50%{
+        opacity: 1;
+    }
+    100%{
+        top: 50px;
+        opacity: 0;
+    }
+}
